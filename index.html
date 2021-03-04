@@ -1,18 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repo website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Moldoványi Gergely's Repo website</h1>
-    <h2>Goals</h2>
-    <ul>
-        <li>Finish the greenfox acadamy curse</li>
-        <li>Have a software development position</li>
-    </ul>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Slideshow Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 8</div>
+        <img src="./images/Pompei.JPG" style="width: 100%" />
+        <div class="content">
+          <h1>Pompei</h1>
+          <p>The acient Rome city. Holiday memory from 2010.</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 8</div>
+        <img src="./images/Capri.JPG" style="width: 100%" />
+        <div class="content">
+          <h1>Capri</h1>
+          <p>Beatiful, little and very famous island. Holiday memory from 2010.</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 8</div>
+        <img src="./images/Neuschwanstein castle.JPG" style="width: 100%" />
+        <div class="content">
+          <h1>Neuschwanstein castle</h1>
+          <p>This castle inspired the Walt Disney's castle. Holiday memory from 2014.</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 8</div>
+        <img src="./images/Florence.jpg" style="width: 100%" />
+        <div class="content">
+          <h1>Florence</h1>
+          <p>Italy... Second home! Holiday memory from 2015.</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 8</div>
+        <img src="./images/Corfu.JPG" style="width: 100%" />
+        <div class="content">
+          <h1>Corfu</h1>
+          <p>Another beatiful island. Holiday memory from 2016.</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 8</div>
+        <img src="./images/Teotihuacan.JPG" style="width: 100%" />
+        <div class="content">
+          <h1>Teotihuacan</h1>
+          <p>Mexico. Holiday memory from 2017.</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 8</div>
+        <img src="./images/Chichen Itza.JPG" style="width: 100%" />
+        <div class="content">
+          <h1>Chichen Itza</h1>
+          <p>Mexico. Holiday memory from 2017.</p>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 8</div>
+        <img src="./images/Chebika Oazis.JPG" style="width: 100%" />
+        <div class="content">
+          <h1>Chebika Oazis</h1>
+          <p>Tunisia. Holiday memory from 2017.</p>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="./images/Pompei.JPG" style="width: 100%" onclick="currentSlide(1)" />
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./images/Capri.JPG" style="width: 100%" onclick="currentSlide(2)" />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="./images/Neuschwanstein castle.JPG"
+            style="width: 100%"
+            onclick="currentSlide(3)"
+          />
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./images/Florence.jpg" style="width: 100%" onclick="currentSlide(4)" />
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./images/Corfu.JPG" style="width: 100%" onclick="currentSlide(5)" />
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./images/Teotihuacan.JPG" style="width: 100%" onclick="currentSlide(6)" />
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./images/Chichen Itza.JPG" style="width: 100%" onclick="currentSlide(7)" />
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./images/Chebika Oazis.JPG" style="width: 100%" onclick="currentSlide(8)" />
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
